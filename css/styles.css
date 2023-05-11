@@ -62,7 +62,7 @@ section {
 }
 
 body {
-    background-image: url(img/background-1.jpg);
+    /*background-image: url(img/background-1.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -80,7 +80,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-image: url(img/background-header-vetter-river.jpg);
+  /*  background-image: url(img/background-header-vetter-river.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     height: var(--margin-top-header);
