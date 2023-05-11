@@ -167,7 +167,7 @@ body {
 /******************     HERO-IMAGE    ************/
 
 .hero_image {
-    background-image: url(/img/emocionadosporesecompomiso.jpg);
+   /* background-image: url(/img/emocionadosporesecompomiso.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -418,13 +418,11 @@ body {
 
 #lado-g {
     width: 400px;
-    background-image: url(/img/isla-mujeres-2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #lado-f {
-    background-image: url(/img/playa-nizuc.jpg);
     width: 360px;
     background-size: cover;
     background-position: center;
@@ -433,7 +431,6 @@ body {
 
 #lado-e {
     width: 450px;
-    background-image: url(/img/puerto-2.jpg);
     background-size: cover;
     background-position: center;
     animation-delay: 5.7s;
@@ -441,7 +438,6 @@ body {
 }
 
 #lado-d {
-    background-image: url(/img/puerto52.jpg);
     width: 360px;
     background-size: cover;
     background-position: center;
@@ -450,7 +446,6 @@ body {
 }
 
 #lado-c {
-    background-image: url(/img/navidad-puerto.jpg);
     width: 450px;
     background-size: cover;
     background-position: center;
@@ -458,7 +453,6 @@ body {
 }
 
 #lado-b {
-    background-image: url(/img/puerto-3.jpg);
     width: 450px;
     background-size: cover;
     background-position: center;
@@ -468,7 +462,6 @@ body {
 
 #lado-a {
     width: 450px;
-    background-image: url(/img/punta-nizuc.jpg);
     background-size: cover;
     background-position: center;
     animation-delay: 18.8s;
@@ -632,33 +625,29 @@ body {
 
 }
 .item:nth-child(1) {
-    background-image: url(/img/container-other-cards-1.jpg);
  /* background-position: X    Y; */
     background-position: 72% 35%;
 }
 
 .item:nth-child(2) {
-    background-image: url(/img/container-other-cards-2.jpeg);
     background-position: 60% 8%;
 }
 
 .item:nth-child(3) {
-    background-image: url(/img/container-other-cards-3.jpg);
+    flex-basis: 50%;    /*CRECE LA IMAGEN*/
+
     background-position: 52% 8%;
 }
 
 .item:nth-child(4) {
-    background-image: url(/img/container-other-cards-1.jpg);
     background-position: 45% 8%;
 }
 
 .item:nth-child(5) {
-    background-image: url(/img/container-other-cards-2.jpeg);
     background-position: 45% 25%;
 }
 
 .item:nth-child(6) {
-    background-image: url(/img/container-other-cards-3.jpg);
     background-position: 65% 2%;
 }
 
