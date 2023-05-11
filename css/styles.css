@@ -62,7 +62,7 @@ section {
 }
 
 body {
-    background-image: url(/img/background-1.jpg);
+    background-image: url(img/background-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -80,7 +80,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-image: url(/img/background-header-vetter-river.jpg);
+    background-image: url(img/background-header-vetter-river.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: var(--margin-top-header);
@@ -210,7 +210,7 @@ body {
     filter: opacity(1);
 }
 
-/*  OUR SERVICES*/
+/*  Francia Paris*/
 .heading {
     text-align: center;
     padding-bottom: 2rem;
@@ -309,69 +309,6 @@ body {
     align-items: center;
 }
 
-
-/*
-.service .box-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-gap: 1.5rem;
-}
-.service .box-container .box{
-border-radius: 1rem;
-background: #333;
-text-align: center;
-padding: 2.5rem;
-}
-
-.service .box-container .box1 {
-    background-image: url(/img/1.jpg);
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.service .box-container .box2 {
-    background-image: url(/img/7.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.service .box-container .box3 {
-    background-image: url(/img/10.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.service .box-container .box4 {
-    background-image: url(/img/louvre.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.service .box-container .box5 {
-    background-image: url(/img/9.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.service .box-container .box6 {
-    background-image: url(/img/11.jpg);
-    background-position: center;
-    background-size: cover;  
-}
-*/
-
-/*
-.service .box-container .box i{
-    height: 6rem;
-    width: 6rem;
-    line-height: 6rem;
-    border-radius: 50%;
-    font-size: 2.5rem;
-    background: var(--main-color);
-    color: #0a0a0a;
-}
-*/
 .service .box-container .box h3 {
     font-size: 3rem;
     color: #f5f1f1;
@@ -390,7 +327,7 @@ padding: 2.5rem;
     
 }
 
-/*ABOUT US*/
+/*PTO MORELOS*/
 .about {
     position: relative;
     display: flex;
