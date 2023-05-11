@@ -1,0 +1,1011 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+/*
+A continuacion les pongo los servidores DNS que utiliza telmex.
+
+Preferid________________ Alternativo
+200.23.242.201 ----------- 200.23.242.193
+200.23.242.193 ----------- 200.23.242.201
+200.33.146.193 ----------- 200.33.146.201
+200.33.146.209 ----------- 200.33.146.217
+200.33.146.217 ----------- 200.33.146.209
+200.33.148.193 ----------- 200.33.148.201
+200.33.148.201 ----------- 200.33.148.193
+
+Dirección IP del DNS Primario201.144.94.245
+Dirección IP del DNS secundario187.141.30.245
+*/
+:root {
+    --main-color: #3867d6;
+    --black-alpha-color: rgba(51, 51, 51, 0.562);
+    --margin-top-header: 4rem;
+    --width-image-paris-total-wide: 23rem;
+    --width-image-paris-mobil-wide: 40rem;
+    --text-shadow: #660404;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+
+}
+
+html {
+
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #550202;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 30px 5%;
+}
+
+body {
+    background-image: url(/img/background-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+/*  MENU section    */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-image: url(/img/background-header-vetter-river.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--margin-top-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3%;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.header .logo span {
+    color: var(--main-color);
+}
+
+.header .navbar a {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-left: 2rem;
+    background-color: rgba(179, 179, 179, 0.11);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.header .navbar a:hover {
+    padding: 5px;
+    color: var(--main-color);
+}
+
+#menu-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*  HOME section*/
+
+
+.home .content {
+    text-align: center;
+    padding-top: var(--margin-top-header);
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 2px var(--text-shadow);
+    text-transform: uppercase;
+}
+
+.content h3 span {
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #333;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+
+/******************     HERO-IMAGE    ************/
+
+.hero_image {
+    background-image: url(/img/emocionadosporesecompomiso.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero_image_opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hero-opacity-color);
+    text-align: center;
+}
+
+.hero_image_title {
+    font-size: 7.5vw;
+    /*"VIEWPORT: vh, vw" SE AJUSTA AL TAMAÑO DEL TAMAÑO DE LA PANTALLA*/
+    color: #eee;
+    text-shadow: 1px 2px 13px var(--main-color);
+}
+
+/*      IMAGES SLIDES       */
+
+.home .swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home .swiper-container .swiper-wrapper {
+    height: 30rem;
+    width: 60rem;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    filter: opacity(1);
+}
+
+/*  OUR SERVICES*/
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-shadow: 1px 2px 10px var(--text-shadow);
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+
+.box-container .box1 {
+    width: 30%;
+    height: 450px;
+    background-image: url(/img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container .box2 {
+    width: 30%;
+    height: 450px;
+    background-image: url(/img/7.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container .box3 {
+    width: 30%;
+    height: 450px;
+    background-image: url(/img/10.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container .box4 {
+    width: 30%;
+    height: 450px;
+    background-image: url(/img/louvre.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-container .box5 {
+    width: 30%;
+    height: 450px;
+    background-image: url(/img/9.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-container .box6 {
+    width: 30%;
+    height: 450px;
+    background-image: url(/img/11.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+.service .box-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+gap: 1.5rem;
+}
+.service .box-container .box{
+border-radius: 1rem;
+background: #333;
+text-align: center;
+padding: 2.5rem;
+}
+
+.service .box-container .box1 {
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.service .box-container .box2 {
+    background-image: url(/img/7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.service .box-container .box3 {
+    background-image: url(/img/10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.service .box-container .box4 {
+    background-image: url(/img/louvre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.service .box-container .box5 {
+    background-image: url(/img/9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.service .box-container .box6 {
+    background-image: url(/img/11.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+*/
+
+/*
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--main-color);
+    color: #0a0a0a;
+}
+*/
+.service .box-container .box h3 {
+    font-size: 3rem;
+    color: #f5f1f1;
+    text-shadow: 1px 2px 5px #660404;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p {
+    font-size: 1.4rem;
+    color: #ffffff;
+    line-height: 1.8;
+    text-shadow: 1px 2px 3px #000;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/*ABOUT US*/
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #444;
+}
+
+.about>.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.about .row .image {
+    width: 100%;
+}
+
+.about .row .image img {
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.about .row h3 {
+    font-size: auto;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.about .row p {
+    color: #eee;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+
+/*      PUERTO MORELOS      */
+.container-cube {
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1500px;
+    z-index: 50;
+}
+
+.container-cube .heading-pto {
+    text-align: center;
+    font-size: 8rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 4px 10px #660404;
+}
+
+.container-cube .heading-pto span {
+    color: var(--main-color);
+}
+
+.lado {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    animation: girar 22s linear infinite;
+    color: #660404;
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(360deg) translateZ(450px);
+        z-index: 10;
+    }
+
+    50% {
+        z-index: -15;
+    }
+
+    to {
+        transform: rotateY(0) translateZ(450px);
+    }
+}
+
+
+#lado-g {
+    width: 400px;
+    background-image: url(/img/isla-mujeres-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#lado-f {
+    background-image: url(/img/playa-nizuc.jpg);
+    width: 360px;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 2.8s;
+}
+
+#lado-e {
+    width: 450px;
+    background-image: url(/img/puerto-2.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: 5.7s;
+
+}
+
+#lado-d {
+    background-image: url(/img/puerto52.jpg);
+    width: 360px;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 8.8s;
+    background-repeat: no-repeat;
+}
+
+#lado-c {
+    background-image: url(/img/navidad-puerto.jpg);
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 11.8s;
+}
+
+#lado-b {
+    background-image: url(/img/puerto-3.jpg);
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 15.3s;
+
+}
+
+#lado-a {
+    width: 450px;
+    background-image: url(/img/punta-nizuc.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: 18.8s;
+}
+
+
+
+/*      CANADA    */
+.gallery {
+    margin-top: 120px;
+
+}
+
+.gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 3rem 2rem;
+    padding-bottom: 30px;
+}
+
+.gallery .box-container .box {
+    position: relative;
+    border: .5rem solid #333;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .box-container .box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    opacity: 1;
+
+}
+
+
+.gallery .box-container .box:hover img {
+    position: relative;
+    transform: scale(1.05);
+    filter: grayscale();
+    z-index: 1;
+    opacity: 1;
+
+}
+
+.gallery .box-container .box .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.gallery .box-container .box .icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    font-size: 1.5rem;
+    z-index: 1000;
+    gap: 20px;
+}
+
+.gallery .box-container .box .icons a {
+    color: #eee;
+    margin: .2rem 1rem;
+    font-size: 2rem;
+}
+
+.gallery .box-container .box .icons a:hover {
+    color: var(--main-color);
+}
+
+/*      OTHERS      */
+
+/*
+.container-other-cards {
+
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 90vh;
+    background: #111;
+}
+
+.item {
+    position: relative;
+    flex: calc(100vw / 6) 1 4;
+    background-size: cover;
+    overflow: hidden;
+    filter: saturate(90%);
+    transition: 1s;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(25deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+}
+
+.item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    animation: borderPulse 5s infinite;
+
+    @media (min: width 1024px; ) {
+        border-right: 1px solid #ccc;
+        border-bottom: none;
+    }
+}
+
+.item:hover {
+    flex-basis: 80%;    /*CRECE LA IMAGEN*
+    filter: saturate(120%);
+
+    @media (min: width 1024px; ) {
+        flex: basis 75%;
+    }
+
+    .quote {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+*/
+
+.container-other-cards{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    z-index: 1;
+    margin-bottom: 20px;
+    gap: 0.5em;
+}
+
+.item{
+    position: relative;
+    flex: calc(100vw / 6) 1 1;
+    background-size: cover;
+    overflow: hidden;
+    filter: saturate(90%);
+    transition: 1s;
+}
+
+
+.item:hover {
+    flex-basis: 80%;    /*CRECE LA IMAGEN*/
+    height: 100%;
+    filter: saturate(120%);
+
+}
+.item:nth-child(1) {
+    background-image: url(/img/container-other-cards-1.jpg);
+ /* background-position: X    Y; */
+    background-position: 72% 35%;
+}
+
+.item:nth-child(2) {
+    background-image: url(/img/container-other-cards-2.jpeg);
+    background-position: 60% 8%;
+}
+
+.item:nth-child(3) {
+    background-image: url(/img/container-other-cards-3.jpg);
+    background-position: 52% 8%;
+}
+
+.item:nth-child(4) {
+    background-image: url(/img/container-other-cards-1.jpg);
+    background-position: 45% 8%;
+}
+
+.item:nth-child(5) {
+    background-image: url(/img/container-other-cards-2.jpeg);
+    background-position: 45% 25%;
+}
+
+.item:nth-child(6) {
+    background-image: url(/img/container-other-cards-3.jpg);
+    background-position: 65% 2%;
+}
+
+.quote {
+    position: absolute;
+    color: #fff;
+    bottom: 35%;
+    left: 5rem;
+    width: calc(100% - 10rem);
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(50%);
+    
+    @media (min-width: 512px) {
+        bottom: 35%;
+        width: 20vw;
+    }
+
+    @media (min-width: 1024px) {
+        left: 15%;
+        bottom: 35%;
+        width: 30vw;
+    }
+
+
+    .p {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1.7rem;
+        font-size: 1.4rem;
+        flex-wrap: balance;
+        font-style: italic;
+
+        &:before,
+        &:after {
+            position: absolute;
+            font-size: 5.5rem;
+            opacity: .6;
+        }
+
+        &:before {
+            content: "“";
+            top: 4rem;
+            left: -2rem;
+            transform: translate(-100%, -100%);
+        }
+
+        &:after {
+            content: "”";
+            bottom: 2rem;
+            right: -2rem;
+            transform: translate(100%, 100%);
+        }
+    }
+
+
+    .span {
+        position: absolute;
+        bottom: -2rem;
+        right: 0;
+        text-align: right;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transform: translate(4rem, 100%);
+
+        &:before {
+            content: "—";
+            margin-right: .7rem;
+        }
+    }
+}
+
+@keyframes bordePulse {
+
+    0%,
+    100% {
+        border-color: rgba(204, 204, 204, 1);
+    }
+
+    25%,
+    75% {
+        border-color: rgba(204, 204, 255, 0.9);
+    }
+
+    50% {
+        border-color: rgba(204, 204, 255, 0.5);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #3867d6;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+    padding: 1rem;
+    
+}
+.about .row .image img{
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 1rem;
+}
+.about .row .content{
+    flex-direction: 1 1 45rem;
+}
+.about .row .content h3{
+    font-size: 3.5 rem;
+    color: #fff;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+    line-height: 2;
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+/*    MEDIAS QUERIES, RESPONSIVE      */
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-bars {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid #222;
+        background: #333;
+
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a {
+        width: 25vw;
+        display: flex;
+        background: #222;
+        border: 0.5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+}
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .logo {
+        font-weight: bolder;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .home .mySwiper .swiper-slide {
+        width: 27rem;
+    }
+
+    .service .box-container .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    /*  imagenes paris*/
+    .service .box-container .box1 {
+        width: var(--width-image-paris-mobil-wide);
+    }
+
+    .service .box-container .box2 {
+        width: var(--width-image-paris-mobil-wide);
+    }
+
+    .service .box-container .box3 {
+        width: var(--width-image-paris-mobil-wide);
+    }
+
+    .service .box-container .box4 {
+        width: var(--width-image-paris-mobil-wide);
+    }
+
+    .service .box-container .box5 {
+        width: var(--width-image-paris-mobil-wide);
+    }
+
+    .service .box-container .box6 {
+        width: var(--width-image-paris-mobil-wide);
+    }
+
+    .service .box-container .box h3 {
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 3px 5px 10px #550202;
+    }
+
+    .service .box-container .box p {
+        font-size: 2.4rem;
+    }
+
+    .about>.row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  CUBO PUERTO */
+
+    .lado {
+        height: 320px;
+        width: 100px;
+
+    }
+
+    /*   CANDADA     */
+    .gallery {
+        margin-top: 0;
+        padding-top: 0px;
+    }
+    .container-other-cards{
+        flex-direction: column;
+    }
+    .item{
+        flex: calc(100vh / 12) 1 1;
+        width: 100vw;
+        padding: 0 .5rem;
+        position: relative;
+        left: 50% 50%;
+    }
+}
