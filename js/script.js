@@ -7,7 +7,7 @@ menu.onclick = () =>{
 }
 window.onscroll=() =>{
     menu.classList.remove('fa-times');
-    navbar.classList.remove('acvtive');
+    navbar.classList.remove('active');
 }
 
 /*    EFECTO SWIPER-SLIDER    */

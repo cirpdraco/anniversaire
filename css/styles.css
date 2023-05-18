@@ -66,7 +66,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-  /*  background-image: url(img/background-header-vetter-river.jpg);*/
+    /*  background-image: url(img/background-header-vetter-river.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     height: var(--margin-top-header);
@@ -88,12 +88,14 @@ body {
 
 .header .navbar a {
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 800;
     margin-left: 2rem;
-    background-color: rgba(179, 179, 179, 0.11);
+    background-color: rgba(70, 2, 2, 0.0);
     border-radius: 10px;
     padding: 5px 10px;
+    text-shadow: 2px 4px 5px var(--black-alpha-color);
+
 }
 
 .header .navbar a:hover {
@@ -153,7 +155,7 @@ body {
 /******************     HERO-IMAGE    ************/
 
 .hero_image {
-   /* background-image: url(/img/emocionadosporesecompomiso.jpg);*/
+    /* background-image: url(/img/emocionadosporesecompomiso.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -304,7 +306,7 @@ body {
     font-weight: 600;
     padding: 10px;
     text-align: center;
-    
+
 }
 
 /*PTO MORELOS*/
@@ -578,19 +580,20 @@ body {
     }
 }
 */
-.heading-other{
+.heading-other {
     text-align: center;
     font-size: 8rem;
     color: white;
     font-weight: 600;
     text-shadow: 2px 4px 10px #660404;
 }
+
 .heading-other span {
     color: var(--main-color);
 }
 
 
-.container-other-cards{
+.container-other-cards {
     width: 100vw;
     height: 90vh;
     display: flex;
@@ -599,7 +602,7 @@ body {
     gap: 0.5em;
 }
 
-.item{
+.item {
     position: relative;
     flex: calc(100vw / 6) 1 1;
     background-size: cover;
@@ -610,13 +613,15 @@ body {
 
 
 .item:hover {
-    flex-basis: 80%;    /*CRECE LA IMAGEN*/
+    flex-basis: 80%;
+    /*CRECE LA IMAGEN*/
     height: 100%;
     filter: saturate(120%);
 
 }
+
 .item:nth-child(1) {
- /* background-position: X    Y; */
+    /* background-position: X    Y; */
     background-position: 72% 35%;
 }
 
@@ -650,7 +655,7 @@ body {
     opacity: 0;
     transition: 1s;
     transform: translateX(50%);
-/*    
+    /*    
     @media (min-width: 512px) {
         bottom: 35%;
         width: 20vw;
@@ -711,7 +716,163 @@ body {
     */
 }
 
-@keyframes bordePulse {
+/*      SIX-YEARS       */
+.seis-años {
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 600;
+    color: #eee;
+    text-shadow: 5px 5px 15px #550202;
+}
+
+.seis-años span {
+    color: var(--main-color);
+}
+
+.six-years {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    color: #000;
+    background-image: url(/img/emocionadosporesecompomiso2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.six-years-cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+}
+
+.card-izq {
+    width: 40%;
+    background-image: url(/img/nos-eifel.jpg);
+    background-position: 25% 75%;
+    background-size: cover;
+    opacity: 0.6;
+    display: flex;
+    justify-content: start;
+}
+
+.text1-izq {
+    transform-style: preserve-3d;
+    perspective: 900px;
+}
+
+.text1-izq:before,
+.text1-izq:after {
+    position: absolute;
+    content: "6 AÑOS";
+    transition: .2s;
+    font-size: 100px;
+    font-family: arial;
+    font-weight: 900;
+    transform-style: preserve-3d;
+    transform: rotateY(-55deg);
+}
+
+.text1-izq:after {
+    color: #4b4a4a;
+    left: -5px;
+}
+
+.text1-izq:before {
+
+    color: #14213d;
+
+    left: -22px;
+}
+
+.text2-izq {
+    transform-style: preserve-3d;
+    perspective: 900px;
+    padding-top: 280px;
+}
+
+.text2-izq:before,
+.text2-izq:after {
+    position: absolute;
+    content: "JUNTOS";
+    transition: .2s;
+    font-size: 100px;
+    font-family: arial;
+    font-weight: 900;
+    transform-style: preserve-3d;
+    transform: rotateY(-65deg);
+
+}
+
+.text2-izq:after {
+    color: #4b4a4a;
+    left: -5px;
+}
+
+.text2-izq:before {
+    color: #14213d;
+    left: -12px;
+}
+
+
+/*
+.card-izq p {
+    font-size: 15rem;
+    font-weight: 600;
+    color: rgb(65, 1, 8);
+    display: flex;
+    text-align: center;
+}
+  
+ 
+
+.card-izq span {
+    color: var(--main-color);
+    font-size: 8rem;
+}
+*/
+
+.card-der {
+    width: 50%;
+}
+
+
+.text1-1 {
+    transform-style: preserve-3d;
+    perspective: 900px;
+    padding-top: 80px;
+}
+
+.text1-1:before,
+.text1-1:after {
+    position: absolute;
+    content: "Gracias por llenar mi corazon de alegria.";
+    transition: .2s;
+    font-size: 80px;
+    font-family: arial;
+    font-weight: 900;
+    transform-style: preserve-3d;
+    transform: rotateY(-5deg);
+}
+
+.text1-1:after {
+    color: var(--main-color);
+    margin-left: +50px;
+}
+
+.text1-1:before {
+    color: #eee;
+    margin-left: +60px;
+}
+.seis-años .ILY{
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 600;
+    color: #eee;
+    text-shadow: 5px 5px 15px #550202;
+    text-transform: uppercase;
+}
+@keyframes borderPulse {
 
     0%,
     100% {
@@ -802,6 +963,7 @@ body {
 @media(max-width:768px) {
     #menu-bars {
         display: initial;
+
     }
 
     .header .navbar {
@@ -810,7 +972,7 @@ body {
         left: 0;
         right: 0;
         border-top: .1rem solid #222;
-        background: #333;
+        background: transparent;
 
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -826,11 +988,15 @@ body {
     .header .navbar a {
         width: 25vw;
         display: flex;
-        background: #222;
+        background: rgba(20, 79, 243, 0.315);
         border: 0.5rem;
         padding: 1.3rem;
         margin: 1.3rem;
         font-size: 2rem;
+        color: #ffffff;
+        text-shadow: 3px 3px 10px var(--main-color);
+        text-transform: uppercase;
+
     }
 
     .home .content h3 {
@@ -840,6 +1006,14 @@ body {
 
 
 @media(max-width:450px) {
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
     html {
         font-size: 50%;
         color: #fff;
@@ -849,6 +1023,20 @@ body {
         font-weight: bolder;
         color: #fff;
         font-size: 3rem;
+    }
+
+    .header .navbar a {
+        width: 45vw;
+        display: flex;
+        background: rgba(20, 79, 243, 0.315);
+        border: 0.5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+        color: #ffffff;
+        text-shadow: 3px 3px 10px var(--text-shadow);
+        text-transform: uppercase;
+
     }
 
     .home .mySwiper .swiper-slide {
@@ -916,10 +1104,12 @@ body {
         margin-top: 0;
         padding-top: 0px;
     }
-    .container-other-cards{
+
+    .container-other-cards {
         flex-direction: column;
     }
-    .item{
+
+    .item {
         flex: calc(100vh / 12) 1 1;
         width: 100vw;
         padding: 0 .5rem;
@@ -931,27 +1121,105 @@ body {
 
     .item:nth-child(1) {
         /* background-position: X    Y; */
-           background-position: 72% 35%;
-       }
-       
-       .item:nth-child(2) {
-           background-position: 60% 8%;
-       }
-       
-       .item:nth-child(3) {       
-           background-position: 52% 8%;
-       }
-       
-       .item:nth-child(4) {
-           background-position: 45% 8%;
-       }
-       
-       .item:nth-child(5) {
-           background-position: 45% 25%;
-       }
-       
-       .item:nth-child(6) {
-           background-position: 65% 2%;
-       }
+        background-position: 72% 35%;
+    }
+
+    .item:nth-child(2) {
+        background-position: 60% 8%;
+    }
+
+    .item:nth-child(3) {
+        background-position: 52% 70%;
+    }
+
+    .item:nth-child(4) {
+        background-position: 45% 70%;
+    }
+
+    .item:nth-child(5) {
+        background-position: 45% 25%;
+    }
+
+    .item:nth-child(6) {
+        background-position: 45% 2%;
+    }
+
+
+    /*      BODAS DE HIERRO     */
+
+    .seis-años {
+        font-size: 6rem;
+
+    }
+
+    .six-years {
+        background-position: 65% 15%;
+
+    }
+
+    .card-izq {
+        width: 90%;
+        height: 70%;
+        background-image: none;
+        opacity: 1;
+    }
+
+    .text1-izq:before,
+    .text1-izq:after {
+        font-size: 80px;
+    }
+
+    .text1-izq:after {
+        margin-left: +40px;
+    }
+
+    .text1-izq:before {
+        margin-left: +50px;
+    }
+
+    .text2-izq:before,
+    .text2-izq:after {
+        font-size: 80px;
+    }
+
+    .text2-izq:after {
+        margin-left: +30px;
+    }
+
+    .text2-izq:before {
+        margin-left: +30px;
+    }
+
+    .text1-izq {
+        padding-top: 40px;
+    }
+
+    .text2-izq {
+        padding-top: 250px;
+    }
+
+    .six-years-cards {
+        display: block;
+    }
+
+
+    .card-der{
+    width: 90%;
+    }
+    
+.text1-1:before,
+.text1-1:after {
+    font-size: 30px;
+    font-weight: 600;
+}
+    
+.text1-1:after {
+    margin-left: +20px;
+}
+
+.text1-1:before {
+    margin-left: +22px;
+}  
+
 
 }
